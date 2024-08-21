@@ -5,7 +5,7 @@ def quadrado(n):
 print('def', quadrado(10))
 
 # função anônima
-print('lambda',(lambda x: x**2)(10))
+print('lambda', (lambda x: x**2)(10))
 
 lista = [1, 2, 3, 4]
 print('antes', lista)

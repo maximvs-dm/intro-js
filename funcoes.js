@@ -1,12 +1,14 @@
 // função tradicional
-function quadrado(n) {
+function quadrado(n, i, v) {
   console.log({
     valor: n,
-    // indice: i,
-    // lista: v,
+    indice: i,
+    lista: v,
   });
   return n ** 2;
 }
+
+console.log("function", quadrado(10));
 
 // função tradicional
 const lista = [1, 2, 3, 4];
