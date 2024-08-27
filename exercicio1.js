@@ -29,12 +29,15 @@ function ehPrimo(n) {
   for (let x = 3; x <= n ** 0.5 + 1; x += 2) {
     if (n % x === 0) {
       // x é divisor de n
+      // console.log(`${n} / ${x} = ${n / x}`);
       return false;
     }
   }
 
   return true;
 }
+
+// ehPrimo(360);
 
 console.log("true", ehPrimo(13));
 console.log("true", ehPrimo(17));
