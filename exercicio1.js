@@ -46,9 +46,34 @@ console.log("false", ehPrimo(102));
 console.log("false", ehPrimo(381));
 
 function intervaloDePrimos(n1, n2) {
-  // seu código aqui
+  const primos = [];
+
+  for (let n = n1; n <= n2; n++) {
+    if (ehPrimo(n)) {
+      primos.push(n);
+    }
+  }
+
+  return primos;
 }
 
+console.log("de 2 a 10:", intervaloDePrimos(2, 10));
+console.log("de 50 a 100:", intervaloDePrimos(50, 100));
+console.log("de 8 a 10:", intervaloDePrimos(8, 10));
+
 function filtraPrimos(v) {
-  // seu código aqui
+  const primos = [];
+
+  for (let x of v) {
+    if (ehPrimo(x)) {
+      primos.push(x);
+    }
+  }
+
+  return primos;
 }
+
+const lista = [3, 45, 98, 101, 23, 13, 34, 90, 281, 387];
+
+console.log("lista original", lista);
+console.log("lista filtrada", filtraPrimos(lista));
