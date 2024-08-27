@@ -61,16 +61,23 @@ console.log("de 2 a 10:", intervaloDePrimos(2, 10));
 console.log("de 50 a 100:", intervaloDePrimos(50, 100));
 console.log("de 8 a 10:", intervaloDePrimos(8, 10));
 
+// com forEach
+// function filtraPrimos(v) {
+//   const primos = [];
+
+//   v.forEach((x) => {
+//     if (ehPrimo(x)) {
+//       primos.push(x);
+//     }
+//   });
+
+//   return primos;
+// }
+
+// com filter
 function filtraPrimos(v) {
-  const primos = [];
-
-  for (let x of v) {
-    if (ehPrimo(x)) {
-      primos.push(x);
-    }
-  }
-
-  return primos;
+  // return v.filter((x) => ehPrimo(x));
+  return v.filter(ehPrimo);
 }
 
 const lista = [3, 45, 98, 101, 23, 13, 34, 90, 281, 387];
